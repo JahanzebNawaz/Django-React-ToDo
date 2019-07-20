@@ -3,7 +3,7 @@ Django React ToDo
 
 
 
-WOrking 
+Working 
 https://medium.com/@john.bagiliko/build-a-django-crud-web-application-part-ii-4dbce965ce1d
 
 https://medium.com/@gazzaazhari/django-backend-react-frontend-basic-tutorial-6249af7964e4
