@@ -15,4 +15,25 @@ DJANGO APP
 11- python3 manage.py runserver
 
 
-REACT
+Django Rest Framework Intergration
+
+1- Add rest_framework in settings.py
+2- create serializers.py in AppName 
+    0 - Import serializers from rest_framework
+    0 - Post ( class name created in models.py) of models from .models
+    0 - views.py in Crud
+        from rest_framework import viewsets 
+        from .serializers import PostSerializer ( from serializers )
+        from .models import Post
+    from urls.py ProjectName 
+
+    from rest_framework import routers                    # add this
+    from Crud import views                                # add this
+            
+    router = routers.DefaultRouter()                      # add this
+    router.register(r'posts', views.PostView, 'Crud')     # add this
+            
+    urlpatterns = [
+        path('admin/', admin.site.urls),           
+        path('api/', include(router.urls))                # add this
+    ]
