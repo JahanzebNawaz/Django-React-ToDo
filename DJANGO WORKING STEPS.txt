@@ -1,0 +1,18 @@
+Following are steps to make django App
+
+DJANGO APP 
+
+1- django-admin startproject ProjectName
+2- cd ProjectName
+3- python3 manage.py runserver
+4- python3 manage.py startapp AppName
+5- settings.py ( Add AppName in INSTALLED_APPS)
+6- models.py ( Create Model for Database )
+7- python3 manage.py makemigrations AppName
+8- python3 manage.py migrate
+9- python3 manage.py createsuperuser
+10- admin.py ( import models  and add admin.site.register(ModelName))
+11- python3 manage.py runserver
+
+
+REACT
